@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Бабуленькины котятки V2.0</title>
+  <link rel="stylesheet" href="style.css">
+
+ 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+
+
+<link rel="shortcut icon" href="images/icon.png" type="image/png">
+</head>
+
+
+<body class="wrapper">
+
+<header>Бабуленькины котятки</header>
+
+  <input type="checkbox" id="menu1" class="choice beng" checked>
+  <!--<label for="menu1">Абисинская</label> -->
+  <input type="checkbox" id="menu2" class="choice norv" checked>
+  <!--<label for="menu2">Британская</label> -->
+  <input type="checkbox" id="menu3" class="choice pers" checked>
+  <!--<label for="menu3">Русская голубая</label> -->
+  <input type="checkbox" id="menu4" class="choice siam" checked>
+  <!--<label for="menu4">Сиамская</label> -->
+  
+  <div id="content">
+    <main id="photos">
+
+    	<div class="cat col-1 pers">
+      		<image id="img1" class="img" src="images/pers-1.jpg" alt="Персидская кошка 1">
+      		<p class="descr">Айва, 3 года - девочка</p>
+    	</div>
+
+    	<div class="cat col-2 norv">
+    		<image id="img2" class="img" src="images/norv-1.jpg" alt="Норвежская кошка 1">
+     		<p class="descr">Эстель, 2 года - девочка</p>
+    	</div>
+
+    	<div class="cat col-1 norv">
+      		<image id="img3" class="img" src="images/norv-2.jpg" alt="Норвежская кошка 2">
+        	<p class="descr">Корни, 2 года - мальчик</p>
+     	</div>
+
+      	<div class="cat col-1 pers">
+        	<image id="img4" class="img" src="images/pers-2.jpg" alt="Персидская кошка 2">
+        	<p class="descr">Саймон, 4 года - мальчик</p>
+      	</div>
+
+     	 <div class="cat col-1 siam">
+        	<image id="img5" class="img" src="images/siam-1.jpg" alt="Сиамская кошка 1">
+          	<p class="descr">Эллис, 6 лет - девочка</p>
+      	</div>
+
+        <div class="cat col-2 norv">
+        	<image id="img6" class="img" src="images/norv-3.jpg" alt="Норвежская кошка 3">
+            <p class="descr">Сара, 4 года - девочка</p>
+        </div>
+
+    	<div class="cat col-1 norv">
+      		<image id="img7" class="img" src="images/norv-4.jpg" alt="Норвежская кошка 4">
+        	<p class="descr">Пэм, 8 лет - девочка</p>
+     	</div>
+
+     	<div class="cat col-3 beng">
+       		<image id="img8" class="img" src="images/beng-1.jpg" alt="Бенгальская кошка 1">
+      		<p class="descr">Одри, 1 год - девочка</p>
+     	</div>
+
+  	</main>
+
+  	<nav class="menu">
+    	<label for="menu1">Бенгальская</label>
+    	<label for="menu2">Норвежская</label>
+    	<label for="menu3">Персидская</label>
+    	<label for="menu4">Сиамская</label>
+  	</nav>
+
+  	<aside class="rating">
+        <h1>Рейтинг котиков</h1>
+        <label for="sort"><span style="color:#922B21">По убыванию</span></label>
+        <input id="sort" type="checkbox" name="sort" value="decreasing" />
+        
+        <ul id="table1">
+
+          <li>Бенгальская
+            <div class="rating-item">
+              <div class="rating-line green"></div><span style = "font-size: 15px">10</span>
+            </div>
+          <li>Норвежская
+              <div class="rating-item">
+                <div class="rating-line yellow"></div> <span style = "font-size: 15px">8</span>
+            </div>
+          <li>Персидская
+            <div class="rating-item">
+              <div class="rating-line green"></div><span style = "font-size: 15px">9</span>
+            </div>
+          <li>Сиамская
+            <div class="rating-item">
+              <div class="rating-line red"></div><span style = "font-size: 15px">6</span>
+            </div>
+
+        </ul>
+
+        <ul id="table2">
+          <li>Бенгальская
+            <div class="rating-item">
+              <div class="rating-line green"></div><span style = "font-size: 15px">10</span>
+            </div>
+          <li>Персидская
+            <div class="rating-item">
+              <div class="rating-line green"></div><span style = "font-size: 15px">9</span>
+            </div>
+          <li>Норвежская
+              <div class="rating-item">
+                <div class="rating-line yellow"></div><span style = "font-size: 15px">8</span>
+            </div>
+          <li>Сиамская
+            <div class="rating-item">
+              <div class="rating-line red"></div><span style = "font-size: 15px">6</span>
+            </div>
+        </ul>
+
+   </div>
+
+
+
+<footer>
+  <h4 id="footer-left">&copy ООО "Бабуленькa & co"</h4>
+  <h4 id="footer-right"> Адрес: ул. Котовая, д. 36</h4>
+</footer>
+
+</body>
+
+</html>

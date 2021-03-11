@@ -1,0 +1,217 @@
+$color1: #CCD1D1;
+$color2: #D6EAF8;
+$color3: #C39BD3;
+$color4:  #F9E79F;
+
+body {
+  background-color: #CCD1D1;
+  min-height: 100%;
+}
+
+header {
+  font-family: 'EB Garamond', serif;
+  color: #000000 ;
+  text-align: center;
+  letter-spacing: 0.2em;
+  font-size: 70px;
+}
+
+.wrapper {
+  background-color:  #CCD1D1;
+  margin: 10px;
+}
+
+#content {
+  display: flex;
+  min-height: 100%;
+  padding-top: 50px;
+
+}
+
+#photos {
+  *background-color: #D6EAF8;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /*flex: 0 0 80%;*/
+  order: 2;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.img {
+  height: 300px;
+  width: 100%;
+}
+
+.cat {
+  opacity: 0.3;
+}
+
+.col-1 {
+  overflow: hidden;
+  flex: 0 0 33%;
+}
+
+.col-2 {
+  overflow: hidden;
+  flex: 0 0 66%;
+}
+
+.col-3 {
+  overflow: hidden;
+  flex: 0 0 100%;
+}
+
+.descr
+{
+    width: 150px;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    background-color: #C39BD3;
+    color: #000000;
+    margin-top: -50px;
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+}
+
+.menu,
+.rating
+{
+  background-color: #D6EAF8;
+  min-width: 180px;
+  font-family: 'EB Garamond', serif;
+  font-size: 20px;
+}
+
+.menu {
+  order: 1;
+
+}
+
+.menu label {
+  display: block;
+  text-align: center;
+  font-family: 'EB Garamond', serif;
+  line-height: 50px;
+  flex: 0 0 20%;
+  border-bottom: 1px solid;
+  cursor: pointer;
+}
+
+.rating {
+  align-self: flex-start;
+  flex: 1 6 20%;
+  order: 2;
+  padding-left: 10px;
+
+
+}
+
+.rating h1 {
+  text-align: center;
+}
+
+.rating span {
+  font-size: 15px;
+
+}
+  
+ul {
+    list-style: none;
+    padding-left: 0px;
+
+  }
+  
+  .rating-item {
+    display: block;
+  }
+  
+  .rating-line {
+    height: 20px;
+  }
+  .green {
+    width: 150px;
+    background-image: linear-gradient(to right, green, white);
+  }
+  .yellow {
+    width: 100px;
+    background-image: linear-gradient(to right, yellow, white);
+  }
+  .red {
+    width: 60px;
+    background-image: linear-gradient(to right, red, white);
+  }
+
+
+ #sort:checked ~ #table1 {
+    display: none;
+  }
+  
+ #sort:checked ~ #table2 {
+    display: block;
+  }
+
+ #sort:not(:checked) ~ #table1 {
+    display: block;
+  }
+  
+ #sort:not(:checked) ~ #table2 {
+    display: none;
+  }
+
+
+.choice:not(:checked) > .cat.beng,
+.choice:not(:checked) > .cat.siam,
+.choice:not(:checked) > .cat.pers,
+.choice:not(:checked) > .cat.norv
+{
+    opacity: 1;
+}
+
+.choice, .beng:not(:checked) ~ #content #photos > .cat.beng .descr, .norv:not(:checked) ~ #content #photos > .cat.norv .descr, .pers:not(:checked) ~ #content #photos > .cat.pers .descr, .siam:not(:checked) ~ #content #photos > .cat.siam .descr {
+  display: none;
+}
+
+.beng:checked ~ #content #photos > .cat.beng,
+.norv:checked ~ #content #photos > .cat.norv,
+.pers:checked ~ #content #photos > .cat.pers,
+.siam:checked ~ #content #photos > .cat.siam
+{
+    opacity: 1;
+}
+
+.menu label:hover {
+  background-color: #CCD1D1;
+}
+
+.beng:checked ~ #content .menu label[for="menu1"],
+.norv:checked ~ #content .menu label[for="menu2"],
+.pers:checked ~ #content .menu label[for="menu3"],
+.siam:checked ~ #content .menu label[for="menu4"] 
+{
+  background-color: #C39BD3;
+}
+
+.cat:hover > .descr
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+footer {
+  font-size: 20px;
+  margin-top: 20px;
+  border-top: 1px solid;
+  font-family: 'EB Garamond', serif;
+
+}
+
+#footer-left {
+  float: left;
+}
+
+#footer-right {
+  float: right;
+}
