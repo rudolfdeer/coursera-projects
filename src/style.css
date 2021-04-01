@@ -1,0 +1,143 @@
+.body {
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+}
+
+.main-wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+
+  background: #e5e8e8;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1860px;
+}
+
+.wrapper-small {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+}
+
+.logo {
+  margin-bottom: 78px;
+}
+
+.title {
+  font-size: 68px;
+}
+
+.arrows {
+  position: absolute;
+  top: 255px;
+  left: 138px;
+}
+
+.cars {
+  margin-bottom: 120px;
+}
+
+.video {
+  min-height: 680px;
+  background: url(../assets/images/video.jpg) center no-repeat;
+}
+
+.video-title {
+  font-size: 55px;
+  color: #fff;
+  text-align: center;
+  padding-top: 15px;
+  margin-bottom: 150px;
+}
+
+.play-btn {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.play {
+  margin: 0 auto;
+}
+
+.play:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
+
+.main-title {
+  font-size: 88px;
+  text-align: center;
+  margin-bottom: 95px;
+}
+
+.cards {
+  padding: 0 80px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.card {
+  max-width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 190px;
+  margin-right: 55px;
+}
+
+.card-name {
+  font-size: 57px;
+  margin-top: 0;
+  margin-bottom: 52px;
+  width: 100%;
+}
+
+.card-img {
+  margin-bottom: 36px;
+
+  height: 140px;
+}
+
+.card-info {
+  font-size: 30px;
+  margin: 0;
+}
+
+.slogan {
+  font-size: 80px;
+  text-align: center;
+  margin-bottom: 140px;
+  margin-top: 0;
+}
+
+.try {
+  width: 600px;
+  height: 135px;
+  background: #ffde1f;
+  border-radius: 15px;
+  font-size: 68px;
+  border: none;
+}
+
+.btn {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.try {
+  margin-bottom: 140px;
+}
+
+.try:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
