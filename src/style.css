@@ -1,23 +1,84 @@
-.body {
-  font-family: Arial, sans-serif;
-  font-weight: 400;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  min-width: 1020px;
 }
 
-.main-wrapper {
-  max-width: 1920px;
-  margin: 0 auto;
+.main {
+  max-width: 984px;
+  max-height: 1614px;
+  min-width: 984px;
+  min-height: 1614px;
+  width: 984px;
+  height: 1614px;
+  margin: 18px;
+  padding: 0;
+  background-color: #f6f5f3;
 
-  background: #e5e8e8;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  align-items: center;
+
+  font-family: "Arial";
+  text-align: left;
+  line-height: 1.2;
 }
 
 .wrapper {
-  margin: 0 auto;
-  max-width: 1860px;
+  width: 840px;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.wrapper-small {
-  max-width: 1200px;
-  margin: 0 auto;
+.cars-quote {
+  max-width: 650px;
+  margin: 0 25px 50px 25px;
+}
+
+.slider {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.circle {
+  width: 59px;
+  height: 59px;
+  min-width: 59px;
+  min-height: 59px;
+  background: rgb(255, 219, 74);
+  border-radius: 50%;
+  box-shadow: 1.5px 1.5px 1.5px 0px rgba(255, 90, 0, 0.8);
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  width: 18px;
+  height: 27px;
+}
+
+.circle:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
+
+.arrow-left {
+  background-image: url(../assets/images/arrow-l.png);
+}
+
+.arrow-right {
+  background-image: url(../assets/images/arrow-r.png);
 }
 
 .header {
@@ -28,11 +89,18 @@
 }
 
 .logo {
-  margin-bottom: 78px;
+  margin-bottom: 40px;
 }
 
 .title {
-  font-size: 68px;
+  font-size: 35px;
+  color: rgb(0, 0, 0);
+  transform: matrix(1.02585593533417, 0, 0, 1.02585593533417, 0, 0);
+  width: 625.712px;
+  height: 151.333px;
+  text-indent: -1ch;
+  margin: -7px 0 50px 25px;
+  font-weight: normal;
 }
 
 .arrows {
@@ -42,25 +110,34 @@
 }
 
 .cars {
-  margin-bottom: 120px;
+  width: 600px;
 }
 
 .video {
-  min-height: 680px;
-  background: url(../assets/images/video.jpg) center no-repeat;
+  width: 641px;
+  min-height: 361px;
+  background-image: url(../assets/images/video.jpg);
+  background-size: 641px 361px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
 }
 
 .video-title {
-  font-size: 55px;
-  color: #fff;
+  font-size: 29.02px;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.005em;
   text-align: center;
-  padding-top: 15px;
-  margin-bottom: 150px;
+  margin-top: 10px;
+  margin-bottom: 90px;
 }
 
 .play-btn {
+  width: 126px;
+  height: 126px;
   display: flex;
   flex-wrap: nowrap;
+  align-self: center;
 }
 
 .play {
@@ -73,28 +150,31 @@
 }
 
 .main-title {
-  font-size: 88px;
+  font-size: 47px;
+  line-height: 1.2;
+  letter-spacing: 0.0078em;
   text-align: center;
-  margin-bottom: 95px;
+  margin-bottom: 50px;
+  margin-top: 0;
 }
 
 .cards {
-  padding: 0 80px;
   display: flex;
   flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  padding: 0 20px;
 }
 
 .card {
-  max-width: 400px;
+  width: 25%;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin-bottom: 190px;
-  margin-right: 55px;
 }
 
 .card-name {
-  font-size: 57px;
+  font-size: 30px;
   margin-top: 0;
   margin-bottom: 52px;
   width: 100%;
@@ -103,27 +183,27 @@
 .card-img {
   margin-bottom: 36px;
 
-  height: 140px;
+  height: 84px;
 }
 
 .card-info {
-  font-size: 30px;
+  font-size: 16px;
   margin: 0;
 }
 
 .slogan {
-  font-size: 80px;
+  font-size: 42px;
   text-align: center;
-  margin-bottom: 140px;
+  margin-bottom: 50px;
   margin-top: 0;
 }
 
 .try {
-  width: 600px;
-  height: 135px;
+  width: 317px;
+  height: 70px;
   background: #ffde1f;
   border-radius: 15px;
-  font-size: 68px;
+  font-size: 36px;
   border: none;
 }
 
